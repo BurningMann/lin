@@ -73,7 +73,7 @@ productsSLiders.forEach((el) => {
     slidesPerView: '1',
     loop: false,
     speed: 700,
-    spaceBetween: 20,
+    spaceBetween: 30,
     navigation: {
       prevEl: el.querySelector('.swiper-arrow.is-prev'),
       nextEl: el.querySelector('.swiper-arrow.is-next'),
