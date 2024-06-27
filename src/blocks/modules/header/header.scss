@@ -263,7 +263,7 @@
           transition: 0.2s;
         }
       }
-      @media screen and (min-width: calc($lg + 1px)) {
+      /* @media screen and (min-width: calc($lg + 1px)) {
         &:hover {
           .header__nav-item-link {
             &::before {
@@ -271,7 +271,7 @@
             }
           }
         }
-      }
+      } */
     }
 
     @media screen and (min-width: calc($lg + 1px)) {
@@ -295,16 +295,14 @@
         }
 
         &:hover {
-          /* background: rgba(255, 255, 255, 0.9); */
-
-          &:before {
+          /*           &:before {
             opacity: 1;
           }
 
           .header__nav-item-link {
             color: var(--black);
           }
-
+ */
           .header__nav-item-drop {
             opacity: 1;
             visibility: visible;
