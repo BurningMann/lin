@@ -1,0 +1,99 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100lvh;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10vh 2rem 4rem;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  @media screen and (max-width: $lg) {
+    padding: 5vh 2rem 10vh;
+  }
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+    padding: 4rem;
+
+    @media screen and (max-width: $lg) {
+      padding: 4rem 2rem 4rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    z-index: 50;
+    cursor: pointer;
+
+    @media screen and (max-width: $lg) {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    svg {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+
+  &__content-heading {
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media screen and (max-width: $lg) {
+      margin-bottom: 2rem;
+      gap: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    line-height: 175%;
+    max-width: 60rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__form-container {
+  }
+
+  &.success_popup {
+    .popup__wrapper {
+      padding: 4rem 2rem;
+      max-width: 40rem;
+      min-height: 10rem;
+    }
+  }
+}
+
+.success-popup-message {
+  font-size: 2rem;
+  text-align: center;
+}

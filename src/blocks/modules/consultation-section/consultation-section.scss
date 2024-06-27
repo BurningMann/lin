@@ -1,0 +1,39 @@
+.cosultation-section {
+  height: 54.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 65rem 1fr;
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  &__image {
+    @media screen and (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__form-box {
+    background: var(--yellow);
+    padding: 5.5rem 2rem 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $sm) {
+      padding: 3rem var(--container-padding);
+    }
+  
+  }
+
+  &__form-container {
+    max-width: 52rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    line-height: 140%;
+  }
+}

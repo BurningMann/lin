@@ -1,0 +1,22 @@
+// Переменные, миксины, функции
+@import "helpers/fonts";
+@import "helpers/variables";
+@import "helpers/optimize";
+@import "helpers/media-classes";
+
+// Основное
+@import "base/general";
+@import "base/form-styles";
+@import "base/error-page";
+
+@import "base/main-page";
+@import "base/catalog";
+@import "base/news";
+@import "base/about";
+@import "base/product";
+
+// Блоки
+@import "../blocks/modules/header/header";
+@import "../blocks/modules/footer/footer";
+@import "../blocks/modules/popups/popups";
+@import "../blocks/modules/consultation-section/consultation-section";

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include("../blocks/modules/head/head.html")
+  <body>
+    @@include("../blocks/modules/header/header.html")
+    <main class="page">
+      <div class="page-heading-block is-transparent">
+        <div class="page-heading-block__content container">
+          <div class="page-heading-block__crumbs-container">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
+              <div class="breadcrumbs__item"><span class="breadcrumbs__link">Задать вопрос</span></div>
+            </div>
+          </div>
+          <h1 class="page-heading-block__title is-title">Задать вопрос</h1>
+        </div>
+      </div>
+      <div class="system-heading-image"><img src="./img/question-page-heading.jpg" alt="" class="fit-cover" /></div>
+      <div class="container">
+        <div class="question-form-container">
+          <form action="#" class="callback-form js-validate-form">
+            <label class="form-input is-required">
+              <input type="text" class="input" placeholder=" " />
+              <div class="form-input__placeholder">Имя</div>
+            </label>
+            <label class="form-input is-required">
+              <input type="text" class="input" placeholder=" " />
+              <div class="form-input__placeholder">Фамилия</div>
+            </label>
+            <label class="form-input is-required">
+              <input type="text" class="input" placeholder=" " />
+              <div class="form-input__placeholder">Город</div>
+            </label>
+            <label class="form-input is-required is-phone phone-input">
+              <input type="text" class="input" placeholder=" " data-maska />
+              <div class="form-input__placeholder">Телефон</div>
+              <div class="phone-input__mask-switch">
+                <div class="phone-input__mask-switch-current"></div>
+                <div class="phone-input__mask-switch-dropdown"></div>
+              </div>
+            </label>
+            <label class="form-input is-email">
+              <input type="text" class="input" placeholder=" " />
+              <div class="form-input__placeholder">Email</div>
+            </label>
+            <label class="form-input is-required">
+              <select>
+                <option value disabled selected>Тема обращения</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <!--  <div class="form-input__placeholder">Сообщение</div> -->
+            </label>
+            <label class="form-input is-required">
+              <input type="text" class="input" placeholder=" " />
+              <div class="form-input__placeholder">Сообщение</div>
+            </label>
+            <div class="callback-form__footer">
+              <div class="callback-form__personal-data-text">
+                Нажимая кнопку "Отправить" вы соглашаетесь с условиями хранения и обработки песональных данных
+              </div>
+              <div><button type="submit" class="button is-primary">Отправить</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    @@include("../blocks/modules/footer/footer.html") @@include("../blocks/modules/scripts/scripts.html")
+  </body>
+</html>

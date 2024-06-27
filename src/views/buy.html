@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include("../blocks/modules/head/head.html")
+  <body>
+    @@include("../blocks/modules/header/header.html")
+    <main class="page">
+      <div class="page-heading-block">
+        <img src="./img/heading-8.jpg" alt="" class="fit-cover" />
+
+        <div class="page-heading-block__content container">
+          <div class="page-heading-block__crumbs-container">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
+              <div class="breadcrumbs__item"><span class="breadcrumbs__link">где купить</span></div>
+            </div>
+          </div>
+          <h1 class="page-heading-block__title is-title">где купить</h1>
+        </div>
+      </div>
+
+      <section class="page-section container">
+        <div class="about-text-section">
+          <div class="is-title h6 is-upper">о точках продаж</div>
+          <div class="is-gray-text">
+            Продаются в пластиковой таре: ведрах или банках разного объема. Смесь сразу может быть использована по
+            назначению. В жидком виде она пластична, после высыхания набирает хорошую прочность. Материал имеет высокую
+            паропроницаемость, поэтому при его применении исключено скапливание влаги. В состав штукатурки добавляются
+            полимерные смолы, минеральные компоненты мелкой фракции и жидкое стекло. Последнее включает водный щелочной
+            раствор.
+          </div>
+        </div>
+        <div class="contacts-box">
+          <div class="locations-map-top">
+            <div class="locations-map-top__text"></div>
+            <div class="locations-map-top__filter">
+              <label class="form-input is-required">
+                <select>
+                  <option value disabled selected>Регион</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <!--  <div class="form-input__placeholder">Сообщение</div> -->
+              </label>
+              <label class="form-input is-required">
+                <select>
+                  <option value disabled selected>Город</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <!--  <div class="form-input__placeholder">Сообщение</div> -->
+              </label>
+              <label class="form-input is-required">
+                <select>
+                  <option value disabled selected>Тип партнера</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <!--  <div class="form-input__placeholder">Сообщение</div> -->
+              </label>
+            </div>
+          </div>
+          <div id="locations-map"></div>
+        </div>
+        <div class="section-heading">
+          <div class="h1 is-upper is-title">точки продаж</div>
+        </div>
+        <div class="contacts-box">
+          <div class="contacts-box__grid">
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №1
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №2
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" />Точка №3
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №4
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" />Точка №5
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №6
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" />Точка №7
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №8
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" />Точка №9
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" /> Точка №10
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" />Точка №11
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" /> Точка №12
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" />Точка №13
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №14
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-2.jpg" alt="" class="contacts-box__card-type" />Точка №15
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+            <div class="contacts-box__card">
+              <div class="contacts-box__card-title">
+                <img src="./img/map-point-type-1.jpg" alt="" class="contacts-box__card-type" /> Точка №16
+              </div>
+              <div class="contacts-box__card-content">
+                620085, г. Екатеринбург, ул. 8 Марта, д. 267, стр. А, оф. 105
+                <div><a href="tel:+7888474774">Телефон: +7888474774</a></div>
+                <div><a href="#">Сайт: site.ru</a></div>
+              </div>
+              <div class="contacts-box__card-list">
+                <span>Колеровка</span>
+                <span>Выкрас</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include("../blocks/modules/footer/footer.html") @@include("../blocks/modules/scripts/scripts.html")
+  </body>
+</html>

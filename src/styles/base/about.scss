@@ -1,0 +1,219 @@
+.carrer-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__description {
+    max-width: 48rem;
+
+    @media screen and (max-width: $lg) {
+      max-width: 100%;
+    }
+  }
+
+  &__description-main {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: var(--black);
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description-sub {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 140%;
+    color: var(--grey-80);
+    margin-bottom: 13rem;
+
+    @media screen and (max-width: $lg) {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $lg) {
+      display: none;
+    }
+  }
+}
+
+.carrer-advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.carrer-advantages-card {
+  display: grid;
+  grid-template-columns: 33rem 1fr;
+  gap: 3rem;
+  border-bottom: 1px solid rgba(109, 110, 107, 0.2);
+  padding: 1.4rem;
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: repeat(2, 1fr);
+    border-left: none !important;
+    border-bottom: 1px solid rgba(109, 110, 107, 0.2) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 1.4rem !important;
+    padding-top: 1.4rem !important;
+  }
+
+  @media screen and (max-width: $sm) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  &:nth-child(even) {
+    border-left: 1px solid rgba(109, 110, 107, 0.2);
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    padding-top: 0;
+  }
+
+  &:nth-child(5),
+  &:nth-child(6) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__image {
+    @media screen and (max-width: $sm) {
+      height: 15rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 30rem;
+
+    @media screen and (max-width: $sm) {
+      gap: 1rem;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: var(--black);
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--grey-80);
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.about-main-section {
+  display: grid;
+  grid-template-columns: 33rem 1fr;
+  gap: 15rem;
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 3rem;
+
+    @media screen and (max-width: $sm) {
+      flex-direction: column !important;
+      gap: 1rem;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  &__row-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__row-text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: var(--black);
+
+    @media screen and (max-width: $lg) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.about-text-section {
+  display: grid;
+  grid-template-columns: 46rem 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: $lg) {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  &.w-border {
+    border-bottom: 1px solid rgba(109, 110, 107, 0.2);
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: $sm) {
+      padding-bottom: 2rem;
+    }
+  }
+}
