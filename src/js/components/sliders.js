@@ -181,6 +181,10 @@ productSLiderContainer.forEach((el) => {
     loop: true,
     speed: 700,
     spaceBetween: 20,
+    navigation: {
+      prevEl: el.querySelector('.swiper-arrow.is-prev'),
+      nextEl: el.querySelector('.swiper-arrow.is-next'),
+    },
   });
   const swiper = new Swiper(objectSLider, {
     slidesPerView: '1',
