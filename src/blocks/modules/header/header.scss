@@ -276,6 +276,9 @@
 
     @media screen and (min-width: calc($lg + 1px)) {
       &.is-parrent {
+        height: 100%;
+        display: flex;
+        align-items: center;
         position: relative;
         transition: 0.3s;
         padding: 1.2rem;
@@ -321,11 +324,6 @@
             visibility: visible;
           }
         }
-      }
-    }
-
-    @media screen and (max-width: $lg) {
-      &.is-catalog {
       }
     }
   }
